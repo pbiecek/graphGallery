@@ -1,0 +1,11 @@
+
+# load plot from archive
+library(ggplot2)
+library(RCurl)
+tmpobject <- getBinaryURL("https://raw.github.com/pbiecek/graphGallery/master/dce263721cf448701f781a30695331c0/plot.rda")
+tf <- tempfile()
+writeBin(tmpobject, tf)
+(name <- load(tf))
+unlink(tf)
+tmpobject <- NULL
+# get(name)

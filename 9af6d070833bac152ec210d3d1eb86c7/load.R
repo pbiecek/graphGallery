@@ -7,4 +7,5 @@ tf <- tempfile()
 writeBin(tmpobject, tf)
 (name <- load(tf))
 unlink(tf)
+tmpobject <- NULL
 # get(name)
