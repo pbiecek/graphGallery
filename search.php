@@ -30,14 +30,21 @@ foreach ($arr as $key => $row) {
     $tags[$key]  = $row['tags'];
 };
 
-//array_multisort($score, SORT_DESC, 
-//	$hash, SORT_DESC, 
-//	$link, SORT_DESC, 
-//  $tags, SORT_DESC, 
-//	$arr);
-$arr3 = array_slice($arr, 0, min(10, count($arr)-1));
+array_multisort($score, SORT_DESC, 
+	$hash, SORT_DESC, 
+	$link, SORT_DESC, 
+    $tags, SORT_DESC, 
+	$arr);
 
+$total = 0;
+for ($i = 0; $i < count($arr); $i++) {
+ if ($arr[$i]['score'] > 0) {
+ 	$total ++;
+ };
+};
 
-echo json_encode($arr);
+$arr3 = array_slice($arr, 0, min(10, count($arr), $total));
+
+echo json_encode($arr3);
 
 ?>
