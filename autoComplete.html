@@ -1,0 +1,83 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Repository browser</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="http://smarterpoland.pl/QRka/tags.js"></script>
+  <script>
+  $(function() {
+    function split( val ) {
+      return val.split( /,\s*/ );
+    }
+    function extractLast( term ) {
+      return split( term ).pop();
+    }
+ 
+    $( "#tags" )
+      // don't navigate away from the field on tab when selecting an item
+      .bind( "keydown", function( event ) {
+        if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).data( "ui-autocomplete" ).menu.active ) {
+          event.preventDefault();
+        }
+      })
+      .autocomplete({
+        minLength: 0,
+        source: function( request, response ) {
+          // delegate back to autocomplete, but extract the last term
+          response( $.ui.autocomplete.filter(
+            availableTags, extractLast( request.term ) ) );
+        },
+        focus: function() {
+          // prevent value inserted on focus
+          return false;
+        },
+        select: function( event, ui ) {
+          var terms = split( this.value );
+          // remove the current input
+          terms.pop();
+          // add the selected item
+          terms.push( ui.item.value );
+          // add placeholder to get the comma-and-space at the end
+          terms.push( "" );
+          this.value = terms.join( ", " );
+          return false;
+        }
+      });
+  });
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input style="width: 500px" id="tags" />
+  <button id="search">search</button>
+</div>
+<div id="results"></div>
+    <script>
+      $("#tags").keyup(function(e){
+        var q = $("#tags").val();
+        console.log("Tutaj\n");
+        $.getJSON("http://smarterpoland.pl/QRka/search.php", 
+        {
+          query: q
+        },
+        function(data) {
+          console.log("AAAA\n");
+          $("#results").empty();
+          $("#results").append("<p>Results for <b>" + q + "</b></p>");
+          $.each(data, function(i,item){
+            $("#results").append("<a href='http://smarterpoland.pl/QRka/gallery/" + item.hash+ "/index.html'><img width=300 height=300 src='http://smarterpoland.pl/QRka/gallery/" + item.link + "'></a>");
+          });
+        });
+      });
+    </script>
+ 
+</body>
+</html>
+
