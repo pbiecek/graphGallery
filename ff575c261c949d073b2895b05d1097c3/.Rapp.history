@@ -1,0 +1,14 @@
+load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object.rda")
+ls()
+object
+q()
+load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda")
+ls()
+(load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda"))
+(load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object.rda"))
+(load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda")); object
+(load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object.rda")); object
+load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda")
+(load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda"))
+load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda")
+( load("/Users/pbiecek/camtasia/GitHub/graphGallery/ff575c261c949d073b2895b05d1097c3/object2.rda"))
