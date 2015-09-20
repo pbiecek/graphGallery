@@ -1,0 +1,7 @@
+          matematyka         polski  Freq
+1    matematyka <25%    polski <25% 35386
+2 matematyka 25%-50%    polski <25% 18482
+3 matematyka 50%-75%    polski <25%  9796
+4    matematyka >75%    polski <25%  4219
+5    matematyka <25% polski 25%-50% 20973
+6 matematyka 25%-50% polski 25%-50% 23953
