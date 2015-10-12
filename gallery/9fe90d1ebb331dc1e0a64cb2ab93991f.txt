@@ -1,0 +1,7 @@
+        osrodek       data partia poparcie
+1         IPSOS 2015-10-09    PiS     36.0
+2         IBRiS 2015-10-09    PiS     35.8
+3 MillwardBrown 2015-10-08    PiS     35.0
+4    TNS Polska 2015-10-08    PiS     36.0
+5    TNS Polska 2015-10-08    PiS     42.0
+6         IBRiS 2015-10-07    PiS     33.4
