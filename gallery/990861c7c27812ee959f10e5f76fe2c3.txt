@@ -12,7 +12,7 @@ Coefficients:
 Speciesversicolor  2.50723    0.06778   36.99   <2e-16 ***
 Speciesvirginica   3.50943    0.11313   31.02   <2e-16 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 0.2803 on 80 degrees of freedom
 Multiple R-squared:  0.9604,	Adjusted R-squared:  0.9594 
