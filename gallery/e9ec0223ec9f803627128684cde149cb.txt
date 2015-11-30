@@ -1,0 +1,7 @@
+           Group Coefficient  Value   se   valueL   valueH
+1        Austria (Intercept) 271.53 1.04 269.4916 273.5684
+2        Belgium (Intercept) 278.09 0.97 276.1888 279.9912
+3         Canada (Intercept) 274.49 0.86 272.8044 276.1756
+4 Czech Republic (Intercept) 275.68 1.26 273.2104 278.1496
+5        Germany (Intercept) 272.35 1.17 270.0568 274.6432
+6        Denmark (Intercept) 270.58 1.03 268.5612 272.5988
