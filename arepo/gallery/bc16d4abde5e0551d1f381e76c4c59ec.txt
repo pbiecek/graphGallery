@@ -1,0 +1,7 @@
+         zadanie   procent Max.punktow.za.zadanie
+k_9361 Zadanie 1 0.7821952                      1
+k_9362 Zadanie 2 0.8306225                      1
+k_9363 Zadanie 3 0.4918372                      1
+k_9364 Zadanie 4 0.7995214                      1
+k_9365 Zadanie 5 0.5387319                      1
+k_9366 Zadanie 6 0.8550206                      1

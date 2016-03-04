@@ -1,0 +1,7 @@
+  CNTRYID  AGEG10LFS Freq   Mean s.e.    SD  s.e
+1 Austria 24 or less  898 279.27 1.63 46.15 1.82
+2 Austria      25-34  958 282.06 1.73 49.98 1.63
+3 Austria      35-44 1117 281.35 2.01 50.26 1.40
+4 Austria      45-54 1188 274.48 1.67 46.49 1.24
+5 Austria    55 plus  969 257.48 1.74 46.83 1.47
+6 Belgium 24 or less  994 282.82 1.74 45.07 1.63

@@ -1,0 +1,7 @@
+  CNTRYID GENDER_R  AGEG10LFS Freq Percentage Std.err.
+1 Austria   Female 24 or less  450      15.55     0.06
+2 Austria   Female      25-34  479      19.32     0.07
+3 Austria   Female      35-44  557      22.09     0.10
+4 Austria   Female      45-54  607      23.84     0.09
+5 Austria   Female    55 plus  507      19.20     0.05
+6 Austria     Male 24 or less  448      16.45     0.07
